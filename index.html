@@ -1,26 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Calculator app</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Spartan" />
+    <script type="text/javascript" src="index.js"></script>
+    <title>Frontend Mentor | Calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="calc-design">
+        <h2>calc</h2>
+        <div class="theme-select">
+          <label for="one">1</label>
+          <label for="two">2</label>
+          <label for="three">3</label>
+          <div class="slider">
+            <input
+              type="radio"
+              id="one"
+              value="1"
+              name="select-theme"
+              checked="checked"
+            />
+            <input
+              type="radio"
+              class="theme2"
+              id="two"
+              value="2"
+              name="select-theme"
+            />
+            <input
+              type="radio"
+              class="theme3"
+              id="three"
+              value="3"
+              name="select-theme"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="calc-screen">
+        <h1>0</h1>
+      </div>
+      <div class="calc-buttons">
+        <button class="numbers" value="7">7</button>
+        <button class="numbers" value="8">8</button>
+        <button class="numbers" value="9">9</button>
+        <button class="delete" value="del">DEL</button>
+        <button class="numbers" value="4">4</button>
+        <button class="numbers" value="5">5</button>
+        <button class="numbers" value="6">6</button>
+        <button class="operations" value="+">+</button>
+        <button class="numbers" value="1">1</button>
+        <button class="numbers" value="2">2</button>
+        <button class="numbers" value="3">3</button>
+        <button class="operations" value="-">-</button>
+        <button class="comma" value=".">.</button>
+        <button class="numbers" value="0">0</button>
+        <button class="operations" value="/">/</button>
+        <button class="operations" value="*">X</button>
+        <button class="reset" value="res">RESET</button>
+        <button class="equal" value="=">=</button>
+      </div>
+    </div>
+  </body>
 </html>
